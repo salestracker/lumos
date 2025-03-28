@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "erp-framework"
+version = "1.0.0"
+description = "A clean architecture ERP framework for building and extending ERP solutions."
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "erp" }]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+fastapi = "^0.95.0"
+uvicorn = "^0.22.0"
+httpx = "^0.24.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0"
+pytest-cov = "^3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
